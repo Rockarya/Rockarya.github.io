@@ -286,26 +286,26 @@ p {
 
 /* End Hero Section */
 
-/* Services Section */
-#services .services {
+/* achievements Section */
+#achievements .achievements {
   flex-direction: column;
   text-align: center;
   max-width: 1500px;
   margin: 0 auto;
   padding: 100px 0;
 }
-#services .service-top {
+#achievements .achievement-top {
   max-width: 500px;
   margin: 0 auto;
 }
-#services .service-bottom {
+#achievements .achievement-bottom {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 50px;
 }
-#services .service-item {
+#achievements .achievement-item {
   flex-basis: 80%;
   display: flex;
   align-items: flex-start;
@@ -320,7 +320,7 @@ p {
   z-index: 1;
   overflow: hidden;
 }
-#services .service-item::after {
+#achievements .achievement-item::after {
   content: "";
   position: absolute;
   left: 0;
@@ -331,22 +331,22 @@ p {
   opacity: 0.9;
   z-index: -1;
 }
-#services .service-bottom .icon {
+#achievements .achievement-bottom .icon {
   height: 80px;
   width: 80px;
   margin-bottom: 20px;
 }
-#services .service-item h2 {
+#achievements .achievement-item h2 {
   font-size: 2rem;
   color: white;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
-#services .service-item p {
+#achievements .achievement-item p {
   color: white;
   text-align: left;
 }
-/* End Services Section */
+/* End achievements Section */
 
 /* Projects section */
 #projects .projects {
@@ -421,43 +421,43 @@ p {
 }
 /* End Projects section */
 
-/* About Section */
-#about .about {
+/* experience Section */
+#experience .experience {
   flex-direction: column-reverse;
   text-align: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 100px 20px;
 }
-#about .col-left {
+#experience .col-left {
   width: 250px;
   height: 360px;
 }
-#about .col-right {
+#experience .col-right {
   width: 100%;
 }
-#about .col-right h2 {
+#experience .col-right h2 {
   font-size: 1.8rem;
   font-weight: 500;
   letter-spacing: 0.2rem;
   margin-bottom: 10px;
 }
-#about .col-right p {
+#experience .col-right p {
   margin-bottom: 20px;
 }
-#about .col-right .cta {
+#experience .col-right .cta {
   color: black;
   margin-bottom: 50px;
   padding: 10px 20px;
   font-size: 2rem;
 }
-#about .col-left .about-img {
+#experience .col-left .experience-img {
   height: 100%;
   width: 100%;
   position: relative;
   border: 10px solid white;
 }
-#about .col-left .about-img::after {
+#experience .col-left .experience-img::after {
   content: "";
   position: absolute;
   left: -33px;
@@ -467,7 +467,7 @@ p {
   border: 7px solid crimson;
   z-index: -1;
 }
-/* End About Section */
+/* End experience Section */
 
 /* contact Section */
 #contact .contact {
@@ -559,6 +559,51 @@ p {
 }
 /*End mine Section */
 
+/* skills Section */
+#skills .skills {
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+#skills .skills-items {
+  /* max-width: 400px; */
+  width: 100%;
+}
+#skills .skills-item {
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 18px 0 #0000002c;
+  transition: 0.3s ease box-shadow;
+}
+#skills .skills-item:hover {
+  box-shadow: 0px 0px 5px 0 #0000002c;
+}
+#skills .icon {
+  width: 70px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+#skills .skills-info h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+#skills .skills-info h2 {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+/*End skills Section */
+
 /* Footer */
 #footer {
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
@@ -649,12 +694,12 @@ p {
   }
   /* End Hero */
 
-  /* Services Section */
-  #services .service-bottom .service-item {
+  /* achievements Section */
+  #achievements .achievement-bottom .achievement-item {
     flex-basis: 45%;
     margin: 2.5%;
   }
-  /* End Services Section */
+  /* End achievements Section */
 
   /* Project */
   #projects .project-item {
@@ -677,30 +722,30 @@ p {
   }
   /* End Project */
 
-  /* About */
-  #about .about {
+  /* experience */
+  #experience .experience {
     flex-direction: row;
   }
-  #about .col-left {
+  #experience .col-left {
     width: 600px;
     height: 400px;
     padding-left: 60px;
   }
-  #about .about .col-left .about-img::after {
+  #experience .experience .col-left .experience-img::after {
     left: -45px;
     top: 34px;
     height: 98%;
     width: 98%;
     border: 10px solid crimson;
   }
-  #about .col-right {
+  #experience .col-right {
     text-align: left;
     padding: 30px;
   }
-  #about .col-right h1 {
+  #experience .col-right h1 {
     text-align: left;
   }
-  /* End About */
+  /* End experience */
 
   /* contact  */
   #contact .contact {
@@ -769,6 +814,40 @@ p {
     padding-left: 20px;
   }
   /* End mine  */
+
+  /* skills  */
+  #skills .skills {
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    min-width: 20vh;
+  }
+  #skills .skills-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+  #skills .skills-item {
+    width: 30%;
+    margin: 0;
+    flex-direction: row;
+  }
+  #skills .skills-item .icon {
+    height: 100px;
+    width: 100px;
+  }
+  #skills .skills-item .icon img {
+    object-fit: contain;
+  }
+  #skills .skills-item .skills-info {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+  }
+  /* End skills  */
 }
 /* End Media Query For Tablet */
 
@@ -796,7 +875,7 @@ p {
   }
   /* End header */
 
-  #services .service-bottom .service-item {
+  #achievements .achievement-bottom .achievement-item {
     flex-basis: 22%;
     margin: 1.5%;
   }
